@@ -1,0 +1,64 @@
+@import '../../sass/_vars'
+
+.root
+  padding: 20px
+  border: 1px solid #000
+  border-radius: 5px
+  cursor: pointer
+  position: relative
+  &:not(:last-child)
+    margin-bottom: 30px
+  img
+    max-width: 200px
+    max-height: 200px
+    object-fit: cover
+    margin: 0 auto 15px
+  button
+    margin: 0 auto
+
+.favourite
+  position: absolute
+  padding: 0
+  right: 20px
+  top: 20px
+  font-weight: 700
+  height: 30px
+  width: 30px
+  +flex-center()
+  font-size: 22px
+  border: 1px solid #000
+  border-radius: 5px
+  transition: all .3s
+  background-color: #fff
+  cursor: pointer
+  &:hover
+    color: #fff
+    background-color: #000
+
+.info
+  padding: 0
+  padding-bottom: 25px
+  li
+    a
+      word-wrap: break-word
+    &:not(:last-child)
+      margin-bottom: 5px
+    &:first-child
+      font-weight: 700
+      font-size: 18px
+      margin-bottom: 10px
+
+.more_link
+  display: block
+  height: 50px
+  +flex-center()
+  font-weight: 700
+  text-transform: uppercase
+  letter-spacing: 0.2em
+  border: 1px solid #ececec
+  border-radius: 5px
+  transition: all .3s
+  &:hover
+    background-color: #000
+    color: #fff
+    cursor: pointer
